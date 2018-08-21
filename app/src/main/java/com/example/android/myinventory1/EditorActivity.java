@@ -87,7 +87,7 @@ public class EditorActivity extends AppCompatActivity {
         String productQuantityString = productQuantityEditText.getText().toString().trim();
         int productQuantityInteger = Integer.parseInt(productQuantityString);
 
-        String productSupplierPhoneNumberString = productPriceString.toString().trim();
+        String productSupplierPhoneNumberString = supplierContactEditText.getText().toString().trim();
         int productSupplierPhoneNumberInteger = Integer.parseInt(productSupplierPhoneNumberString);
 
         DbHelper mDbHelper = new DbHelper(this);
