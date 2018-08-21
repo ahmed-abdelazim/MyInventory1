@@ -2,9 +2,9 @@ package com.example.android.myinventory1;
 
 import android.content.ContentValues;
 import android.database.sqlite.SQLiteDatabase;
+import android.os.Bundle;
 import android.support.v4.app.NavUtils;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.Menu;
@@ -16,8 +16,8 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
-import com.example.android.myinventory1.data.DbHelper;
 import com.example.android.myinventory1.data.Contract.Entry;
+import com.example.android.myinventory1.data.DbHelper;
 
 
 public class EditorActivity extends AppCompatActivity {
@@ -112,6 +112,7 @@ public class EditorActivity extends AppCompatActivity {
             Log.d("successfully message", "insert row on table");
         }
     }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_add, menu);

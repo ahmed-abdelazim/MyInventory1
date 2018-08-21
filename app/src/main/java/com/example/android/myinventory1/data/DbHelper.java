@@ -4,8 +4,11 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
-// import data.Contract.Entry to be able to use class Entry directly here.
+
 import com.example.android.myinventory1.data.Contract.Entry;
+
+// import data.Contract.Entry to be able to use class Entry directly here.
+
 /**
  * Created by Person on 21/08/2018.
  */
@@ -37,7 +40,7 @@ public class DbHelper extends SQLiteOpenHelper {
 
         sqLiteDatabase.execSQL(SQL_CREATE_PRODUCT_TABLE);
 
-        Log.d("successfully message" , "created table of db");
+        Log.d("successfully message", "created table of db");
     }
 
     @Override
